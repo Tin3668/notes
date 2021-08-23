@@ -1,0 +1,40 @@
+# home function
+def home():
+    with open("E:\\code\\notes\\txt files\\home.txt") as f:
+       print(f.read())
+
+
+def next():
+    print('')
+    print('=' * 59)
+    print('')
+    
+
+def list(words):
+    LIST=open('txtfiles/list.txt', 'a')
+    LIST.add(words)
+
+def add():
+    pass
+
+
+def delete():
+    pass
+
+
+place = 'home_screen'
+run = True
+
+while run:
+    home()
+    INPUT = input("> ")
+
+
+    if place == 'home_screen':
+
+        if INPUT == "list":
+            list('hi')
+        elif INPUT == 'add':
+            add()
+        elif INPUT == 'quit':
+            run = False
